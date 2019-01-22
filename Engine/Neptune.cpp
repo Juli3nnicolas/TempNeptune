@@ -3,7 +3,7 @@
 
 #include "Neptune.h"
 #include "Graphics/DisplayDeviceInterface.h"
-#include "sonic.h"
+#include "Sonic/sonic.h"
 
 using namespace std;
 
