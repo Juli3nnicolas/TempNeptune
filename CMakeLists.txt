@@ -17,4 +17,4 @@ include("CMake/BuildProjectTree.cmake")
 add_subdirectory ("Engine")
 
 # Include CMake folder for documentation
-target_sources(Neptune PUBLIC "CMake/BuildProjectTree.cmake")
+add_subdirectory("CMake")
