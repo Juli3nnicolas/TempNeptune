@@ -3,6 +3,7 @@
 
 #include "Neptune.h"
 #include "Graphics/DisplayDeviceInterface.h"
+#include "sonic.h"
 
 using namespace std;
 
@@ -14,6 +15,8 @@ int main()
 
 	Neptune::Boo boo;
 	boo.ShowOff();
+
+	sonic::brag();
 
 	while (true);
 

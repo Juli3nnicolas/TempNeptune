@@ -12,6 +12,7 @@ add_executable (Neptune "")
 
 # Include helper scripts
 include("CMake/BuildProjectTree.cmake")
+include("CMake/ImportDependencies.cmake")
 
 # Include sub-projects.
 add_subdirectory ("Engine")
