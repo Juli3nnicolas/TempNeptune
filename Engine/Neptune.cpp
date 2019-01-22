@@ -4,6 +4,7 @@
 #include "Neptune.h"
 #include "Graphics/DisplayDeviceInterface.h"
 #include "Sonic/sonic.h"
+#include "glm/mat4x4.hpp"
 
 using namespace std;
 
@@ -17,6 +18,9 @@ int main()
 	boo.ShowOff();
 
 	sonic::brag();
+
+	// Header-only include-test
+	glm::mat4 mat;
 
 	while (true);
 
