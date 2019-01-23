@@ -19,4 +19,5 @@ PUBLIC
 	${HEADERS}
 PRIVATE
 	${CPP_FILES}
-	"Engine/CMakeLists.txt")
+	"Engine/Graphics/CMakeLists.txt"
+)
