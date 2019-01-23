@@ -1,7 +1,8 @@
 #pragma once
-#define IMPORT_DLL __declspec(dllimport)
+#define DLL_EXPORT __declspec(dllexport)
+#define DLL_IMPORT __declspec(dllimport)
 
 extern "C"
 {
-	IMPORT_DLL void shadow_brag();
+	DLL_IMPORT void shadow_brag();
 }
