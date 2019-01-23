@@ -8,3 +8,8 @@ target_include_directories(Neptune PUBLIC "Dependencies/All/Include")
 find_library(SONIC_LIB "sonic" "Dependencies/Sonic")
 target_link_libraries(Neptune PUBLIC ${SONIC_LIB})
 target_include_directories(Neptune PUBLIC "Dependencies/Sonic/include")
+
+# Dynamic library test
+find_library(SHADOW_LIB "shadow" "Dependencies/shadow")
+target_link_libraries(Neptune PUBLIC ${SHADOW_LIB})
+target_include_directories(Neptune PUBLIC "Dependencies/Shadow/include")

@@ -5,6 +5,7 @@
 #include "Graphics/DisplayDeviceInterface.h"
 #include "Sonic/sonic.h"
 #include "glm/mat4x4.hpp"
+#include "Shadow/shadow.h"
 
 using namespace std;
 
@@ -18,6 +19,7 @@ int main()
 	boo.ShowOff();
 
 	sonic::brag();
+	shadow_brag();
 
 	// Header-only include-test
 	glm::mat4 mat;
