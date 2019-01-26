@@ -1,2 +1,2 @@
-Find how to identify the current platform.
+Find how to identify the current platform (Windows, Linux, MacOSX)
 Find how to identify the current architecture (x86 or x86-64)

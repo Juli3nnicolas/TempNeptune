@@ -4,5 +4,6 @@ message("########## Executing CMake/CMakeLists.txt")
 target_sources(Neptune 
 PRIVATE 
 	"CMake/BuildProjectTree.cmake"
-	"CMake/ImportDependencies.cmake"	
+	"CMake/ImportDependencies.cmake"
+	"CMake/PostBuildOperations.cmake"
 )
