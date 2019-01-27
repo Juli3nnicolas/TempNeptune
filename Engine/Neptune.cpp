@@ -3,13 +3,12 @@
 
 #include "Neptune.h"
 #include "Graphics/DisplayDeviceInterface.h"
-#include "Sonic/sonic.h"
 #include "glm/mat4x4.hpp"
-#include "Shadow/shadow.h"
+#include <SDL2/SDL.h>
 
 using namespace std;
 
-int main()
+int main(int main, char* argv[])
 {
 	cout << "Hello CMake." << endl;
 
@@ -18,13 +17,21 @@ int main()
 	Neptune::Boo boo;
 	boo.ShowOff();
 
-	sonic::brag();
-	shadow_brag();
+	SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO);
+
+	SDL_CreateWindow("test",
+		SDL_WINDOWPOS_CENTERED,
+		SDL_WINDOWPOS_CENTERED,
+		1024,
+		768,
+		SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL);
+
+	while (true);
+
+	SDL_Quit();
 
 	// Header-only include-test
 	glm::mat4 mat;
-
-	while (true);
 
 	return 0;
 }
