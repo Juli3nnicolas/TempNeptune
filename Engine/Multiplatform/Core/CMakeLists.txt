@@ -7,3 +7,4 @@ target_include_directories(Neptune PUBLIC "")
 # Add all module directories
 add_subdirectory("Debug")
 add_subdirectory("File")
+add_subdirectory("Graphics")
