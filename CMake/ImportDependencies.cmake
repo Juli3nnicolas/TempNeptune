@@ -10,8 +10,13 @@ target_include_directories(Neptune PUBLIC "Dependencies/All/Include")
 target_include_directories(Neptune PUBLIC "Dependencies/${CMAKE_SYSTEM_NAME}/Include")
 
 #Link against static libraries
-find_library(LIBKTX_LIB "libktx.gl" "Dependencies/${CMAKE_SYSTEM_NAME}/Static/${NEP_CPU_ARCH}/Release")
-target_link_libraries(Neptune PUBLIC ${LIBKTX_LIB})
+# Debug configurations
+find_library(DEBUG_LIBKTX_LIB "libktx.gld" "Dependencies/${CMAKE_SYSTEM_NAME}/Static/${NEP_CPU_ARCH}/Debug")
+target_link_libraries(Neptune PUBLIC debug ${DEBUG_LIBKTX_LIB})
+
+# Optimised configurations (Release, Final)
+find_library(RELEASE_LIBKTX_LIB "libktx.gl" "Dependencies/${CMAKE_SYSTEM_NAME}/Static/${NEP_CPU_ARCH}/Release")
+target_link_libraries(Neptune PUBLIC optimized ${RELEASE_LIBKTX_LIB})
 
 # Link against loading libraries for DLLs
 
