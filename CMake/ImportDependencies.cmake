@@ -22,3 +22,10 @@ target_link_libraries(Neptune PUBLIC ${GLEW32_LIB})
 find_library(SDL2_LIB "SDL2" "Dependencies/Win32/Static/X64")
 target_link_libraries(Neptune PUBLIC ${SDL2_LIB})
 
+# Only useful if the target is an executable - remove when Neptune is made a static lib
+# Also, the SDL distribution should be updated
+find_library(SDL2_MAIN_LIB "SDL2main" "Dependencies/Win32/Static/X64")
+target_link_libraries(Neptune PUBLIC ${SDL2_MAIN_LIB})
+
+target_link_libraries(Neptune PUBLIC "legacy_stdio_definitions")
+##

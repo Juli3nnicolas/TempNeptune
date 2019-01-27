@@ -8,7 +8,17 @@
 
 using namespace std;
 
-int main(int main, char* argv[])
+// Hack to include SDLmain if the version of visual studio used to compile it is 2013 or earlier
+extern "C"
+{
+	FILE stdstreams_array[3] = { *stdin, *stdout, *stderr };
+	FILE* __iob_func()
+	{
+		return stdstreams_array;
+	}
+}
+
+int main(int argc, char* argv[])
 {
 	cout << "Hello CMake." << endl;
 
