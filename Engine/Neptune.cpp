@@ -5,6 +5,8 @@
 #include "Graphics/DisplayDeviceInterface.h"
 #include "glm/mat4x4.hpp"
 #include <SDL2/SDL.h>
+#include "Debug/StandardErrorCodes.h"
+#include "File/PathHelpers.h"
 
 using namespace std;
 
@@ -42,6 +44,12 @@ int main(int argc, char* argv[])
 
 	// Header-only include-test
 	glm::mat4 mat;
+
+	// Debug error test
+	Neptune::u8 err_code = NEP_STD_U8_ERROR_CODE_0;
+
+	// File test
+	Neptune::u32 ext_pos = Neptune::PathHelpers::GetFileExtension("bob.txt");
 
 	return 0;
 }

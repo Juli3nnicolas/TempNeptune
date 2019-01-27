@@ -24,4 +24,7 @@ PRIVATE
 	"Engine/CMakeLists.txt")
 
 # Add subdirectories
+# Test dir
 add_subdirectory ("Graphics")
+add_subdirectory("Multiplatform")
+add_subdirectory("${CMAKE_SYSTEM_NAME}")
