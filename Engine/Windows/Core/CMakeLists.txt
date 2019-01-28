@@ -11,3 +11,4 @@ PRIVATE
 
 add_subdirectory("Graphics")
 add_subdirectory("Input")
+add_subdirectory("Math")
