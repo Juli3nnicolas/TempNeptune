@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.12)
 
-include("CMake/NeptuneCMakeVars.cmake")
-include("CMake/ConfigVars.cmake")
+include("CMake/NeptuneBuildVariables.cmake")
+include("CMake/PortableCMakeConstants.cmake")
 
 # Common to all definitions
 target_compile_definitions(Neptune PUBLIC KTX_OPENGL STB_IMAGE_IMPLEMENTATION)

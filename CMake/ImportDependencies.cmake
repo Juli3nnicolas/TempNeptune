@@ -1,7 +1,7 @@
 # Manage code-dependency linkage
 cmake_minimum_required (VERSION 3.12)
 
-include("CMake/NeptuneCMakeVars.cmake")
+include("CMake/NeptuneBuildVariables.cmake")
 
 # Include header-only libraries
 target_include_directories(Neptune PUBLIC "Dependencies/All/Include")
