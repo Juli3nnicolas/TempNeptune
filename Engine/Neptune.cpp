@@ -25,11 +25,6 @@ int main(int argc, char* argv[])
 {
 	cout << "Hello CMake." << endl;
 
-	Neptune::Bob();
-
-	Neptune::Boo boo;
-	boo.ShowOff();
-
 	SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO);
 
 	SDL_CreateWindow("test",
