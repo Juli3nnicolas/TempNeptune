@@ -29,4 +29,7 @@ source_group("Engine" REGULAR_EXPRESSION "Engine/+\\w*")
 		source_group("Engine\\Multiplatform\\HighLevel\\Application\\Controller" REGULAR_EXPRESSION "Engine/+Multiplatform/+HighLevel/+Application/+Controller/+\\w*")
 	source_group("Engine\\Multiplatform\\HighLevel\\Camera" REGULAR_EXPRESSION "Engine/+Multiplatform/+HighLevel/+Camera/+\\w*")
 		source_group("Engine\\Multiplatform\\HighLevel\\Camera\\Controller" REGULAR_EXPRESSION "Engine/+Multiplatform/+HighLevel/+Camera/+Controller/+\\w*")
-	
+	source_group("Engine\\Multiplatform\\HighLevel\\Graphics" REGULAR_EXPRESSION "Engine/+Multiplatform/+HighLevel/+Graphics/+\\w*")
+		source_group("Engine\\Multiplatform\\HighLevel\\Graphics\\Factories" REGULAR_EXPRESSION "Engine/+Multiplatform/+HighLevel/+Graphics/+Factories/+\\w*")
+		source_group("Engine\\Multiplatform\\HighLevel\\Graphics\\Spawners" REGULAR_EXPRESSION "Engine/+Multiplatform/+HighLevel/+Graphics/+Spawners/+\\w*")
+		
