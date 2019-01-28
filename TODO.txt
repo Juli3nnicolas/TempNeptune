@@ -1,6 +1,5 @@
 - add opengl32.lib to Neptune's dependencies for Windows
-- Compile the whole engine
-- Run a mandelbrot fractal example
+- check the fix on const pointers stored in containers. VS2017 qualified them as deprecated and wouldn't compile.
 - Check that no documentation or other files are left over in TempNeptune From Neptune
 - Improve the architecure config with cmake (compiling in 32 bits or 64 bits is messy at the moment)
 - Add the FINAL configuration
