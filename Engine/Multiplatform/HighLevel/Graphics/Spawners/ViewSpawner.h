@@ -146,12 +146,12 @@ namespace Neptune
 			///
 			struct CustomShaderAttributeData
 			{
-				const void*	m_id;		/// Attribute's position in m_shaderAttributes
+				void*	m_id;		/// Attribute's position in m_shaderAttributes
 				u8			m_layout;	/// Its layout in its shader. Saved here so that one same shader input is shared for every program.  
 			};
 
 			GraphicsProgram*								m_program;
-			std::vector<const CustomShaderAttributeData>	m_shaderAttributesCustomData;	/// Attributes' custom data (NOTE: contains attributes' position in the shader-attribute table)
+			std::vector<CustomShaderAttributeData>			m_shaderAttributesCustomData;	/// Attributes' custom data (NOTE: contains attributes' position in the shader-attribute table)
 			std::vector<UniformVariableID>					m_uniformVarIDs;				/// Uniform variables' position in m_uniformVariables
 			std::unordered_map<u32, Texture*>				m_textures;					/// Textures' position in m_textures. The key is the texture's ID to enable texture swap.
 		};
@@ -162,7 +162,7 @@ namespace Neptune
 		//
 
 		std::unordered_map<GraphicsProgram::ProgramName, Program>				m_programs;				/// Contains all the programs to be used to render the views
-		std::unordered_map<const void*, GraphicsProgram::ShaderAttribute>		m_shaderAttributes;		/// Stores all shader attributes for all programs (aka the shader-attribute table). The void* is the address of the buffer containing the data (m_data field).
+		std::unordered_map<void*, GraphicsProgram::ShaderAttribute>		m_shaderAttributes;		/// Stores all shader attributes for all programs (aka the shader-attribute table). The void* is the address of the buffer containing the data (m_data field).
 		std::unordered_map<UniformVariableID, GraphicsProgram::UniformVarInput>	m_uniformVariables;		/// Stores all uniform variables for all programs. The void* is the address of the buffer containing the data (m_data field).
 	};
 }

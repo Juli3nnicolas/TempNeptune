@@ -65,7 +65,7 @@ void ViewSpawner::addShaderAttribute(GraphicsProgram::ProgramName _pgmName, cons
 	NEP_ASSERT( it != m_programs.end() );
 
 	// Add the attribute if not already present
-	const void* attribute_ID = _shaderAtt.m_data;
+	void* attribute_ID = _shaderAtt.m_data;
 	m_shaderAttributes.insert({attribute_ID,_shaderAtt});
 
 	// Set its custom data for the corresponding program
