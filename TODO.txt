@@ -1,3 +1,4 @@
+- add opengl32.lib to Neptune's dependencies for Windows
 - Compile the whole engine
 - Run a mandelbrot fractal example
 - Check that no documentation or other files are left over in TempNeptune From Neptune
