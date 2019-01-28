@@ -25,4 +25,9 @@ PRIVATE
 
 # Add subdirectories
 add_subdirectory("Multiplatform")
-add_subdirectory("${CMAKE_SYSTEM_NAME}")
+
+if (${CMAKE_SYSTEM_NAME} STREQUAL  "Windows")
+	add_subdirectory("Windows")
+else()
+	message(FATAL_ERROR "Your system is not supported. Your system is evaluated to be ${CMAKE_SYSTEM_NAME}.")
+endif()

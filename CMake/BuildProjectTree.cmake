@@ -32,4 +32,10 @@ source_group("Engine" REGULAR_EXPRESSION "Engine/+\\w*")
 	source_group("Engine\\Multiplatform\\HighLevel\\Graphics" REGULAR_EXPRESSION "Engine/+Multiplatform/+HighLevel/+Graphics/+\\w*")
 		source_group("Engine\\Multiplatform\\HighLevel\\Graphics\\Factories" REGULAR_EXPRESSION "Engine/+Multiplatform/+HighLevel/+Graphics/+Factories/+\\w*")
 		source_group("Engine\\Multiplatform\\HighLevel\\Graphics\\Spawners" REGULAR_EXPRESSION "Engine/+Multiplatform/+HighLevel/+Graphics/+Spawners/+\\w*")
-		
+
+# Add platform-specific files
+if (${CMAKE_SYSTEM_NAME} STREQUAL  "Windows")
+	include("CMake/BuildWindowsProjectTree.cmake")
+else()
+	message(FATAL_ERROR "Your system is not supported. Your system is evaluated to be ${CMAKE_SYSTEM_NAME}.")
+endif()	
