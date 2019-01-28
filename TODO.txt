@@ -1,5 +1,6 @@
 - Compile the whole engine
 - Run a mandelbrot fractal example
+- Check that no documentation or other files are left over in TempNeptune From Neptune
 - Improve the architecure config with cmake (compiling in 32 bits or 64 bits is messy at the moment)
 - Add the FINAL configuration
 - Build the whole engine as a static library, not an exe
