@@ -29,10 +29,10 @@ for f in files:
 
 print("HEADER FILES:")
 for f in header_files:
-    print(f)
+    print('"' + f + '"')
 
 print("\n\nCPP FILES:")
 for f in cpp_files:
-    print(f)
+    print('"' + f + '"')
 
 print(f"\n\n.cpp + .h file count: {len(header_files) + len(cpp_files)}")
