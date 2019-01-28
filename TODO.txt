@@ -1,1 +1,6 @@
-Import all source code
+- Compile the whole engine
+- Run a mandelbrot fractal example
+- Improve the architecure config with cmake (compiling in 32 bits or 64 bits is messy at the moment)
+- Add the FINAL configuration
+- Build the whole engine as a static library, not an exe
+- Create a new cmake file to fine tune compilation options
