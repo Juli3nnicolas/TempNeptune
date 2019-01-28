@@ -7,6 +7,7 @@
 #include <SDL2/SDL.h>
 #include "Debug/StandardErrorCodes.h"
 #include "File/PathHelpers.h"
+#include "System/Hashing/FastHashFunctions.h"
 
 using namespace std;
 
@@ -50,6 +51,10 @@ int main(int argc, char* argv[])
 
 	// File test
 	Neptune::u32 ext_pos = Neptune::PathHelpers::GetFileExtension("bob.txt");
+
+	// System/Hashing test
+	char data[] = "hey";
+	Neptune::u64 hash = Neptune::Fnv1a64(reinterpret_cast<Neptune::u8*>(data), sizeof(data));
 
 	return 0;
 }
