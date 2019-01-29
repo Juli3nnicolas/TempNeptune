@@ -23,14 +23,10 @@ CLASS ADDITION
 
 PLATFORM CREATION
 
-Every new physical platform must have a Core, HighLevel and Project
-directory. 
+Every new physical platform must have a Core and HighLevel directory. 
 
 The signification of each directory name is as follows:
 - Core: Contains core modules only. A High level module is made up of
 core modules.
 
 - High Level: Any module that relies on core modules.
-
-- Project: Any file that permits the users to build the engine on 
-their machine.
