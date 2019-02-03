@@ -2,6 +2,7 @@
 cmake_minimum_required (VERSION 3.12)
 
 include("CMake/NeptuneBuildVariables.cmake")
+include("CMake/PortableCMakeConstants.cmake")
 
 # Include header-only libraries
 target_include_directories(Neptune PUBLIC "Dependencies/All/Include")
@@ -20,8 +21,6 @@ target_link_libraries(Neptune PUBLIC optimized ${RELEASE_LIBKTX_LIB})
 
 # Link against loading libraries for DLLs
 
-target_link_libraries(Neptune PUBLIC "opengl32")
-
 find_library(ASSIMP_LIB "assimp" "Dependencies/${CMAKE_SYSTEM_NAME}/Static/${NEP_CPU_ARCH}")
 target_link_libraries(Neptune PUBLIC ${ASSIMP_LIB})
 
@@ -36,5 +35,8 @@ target_link_libraries(Neptune PUBLIC ${SDL2_LIB})
 find_library(SDL2_MAIN_LIB "SDL2main" "Dependencies/${CMAKE_SYSTEM_NAME}/Static/${NEP_CPU_ARCH}")
 target_link_libraries(Neptune PUBLIC ${SDL2_MAIN_LIB})
 
-target_link_libraries(Neptune PUBLIC "legacy_stdio_definitions")
-##
+# Include platform-specific system-libraries
+if (${PLATFORM_NAME} STREQUAL  "Windows")
+	target_link_libraries(Neptune PUBLIC "opengl32")
+	target_link_libraries(Neptune PUBLIC "legacy_stdio_definitions")
+endif()	
