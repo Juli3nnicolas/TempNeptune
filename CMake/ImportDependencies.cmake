@@ -20,6 +20,8 @@ target_link_libraries(Neptune PUBLIC optimized ${RELEASE_LIBKTX_LIB})
 
 # Link against loading libraries for DLLs
 
+target_link_libraries(Neptune PUBLIC "opengl32")
+
 find_library(ASSIMP_LIB "assimp" "Dependencies/${CMAKE_SYSTEM_NAME}/Static/${NEP_CPU_ARCH}")
 target_link_libraries(Neptune PUBLIC ${ASSIMP_LIB})
 
