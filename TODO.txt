@@ -1,4 +1,3 @@
-- check the fix on const pointers stored in containers. VS2017 qualified them as deprecated and wouldn't compile.
 - Improve the architecure config with cmake (compiling in 32 bits or 64 bits is messy at the moment)
 - Add the FINAL configuration
 - Build the whole engine as a static library, not an exe
