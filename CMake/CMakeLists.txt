@@ -11,4 +11,5 @@ PRIVATE
 	"CMake/PortableCMakeConstants.cmake"
 	"CMake/ImportDependencies.cmake"
 	"CMake/PostBuildOperations.cmake"
+	"CMake/SetCompilationFlags.cmake"
 )

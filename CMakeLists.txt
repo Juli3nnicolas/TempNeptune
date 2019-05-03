@@ -12,6 +12,7 @@ project ("Neptune")
 add_executable (Neptune "")
 
 # Include helper scripts
+include("CMake/SetCompilationFlags.cmake")
 include("CMake/DefinePreprocessorVariables.cmake")
 include("CMake/BuildProjectTree.cmake")
 include("CMake/ImportDependencies.cmake")
