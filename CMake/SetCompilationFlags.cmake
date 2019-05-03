@@ -1,6 +1,6 @@
 # This script sets up the compilation flags for supported compilers
 
-cmake_minimum_required (VERSION 3.12)
+cmake_minimum_required (VERSION ${CMAKE_MIN_VERSION})
 message("########## Running SetCompilationFlags.cmake")
 
 set(NEP_COMPILER_IS_SUPPORTED "False")

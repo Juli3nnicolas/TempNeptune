@@ -2,7 +2,7 @@
 # It is representative to where (the folders) code files are stored 
 # and keeps the same structure.
 
-cmake_minimum_required (VERSION 3.12)
+cmake_minimum_required (VERSION ${CMAKE_MIN_VERSION})
 
 source_group("CMake" REGULAR_EXPRESSION "CMake/+\\w*")
 source_group("Engine" REGULAR_EXPRESSION "Engine/+\\w*")

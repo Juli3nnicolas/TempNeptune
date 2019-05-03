@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.12)
+cmake_minimum_required (VERSION ${CMAKE_MIN_VERSION})
 
 # This file contains variables that directly affects how Neptune is going to be built.
 # Most of the times the variables defined in this file can be modified by users so that

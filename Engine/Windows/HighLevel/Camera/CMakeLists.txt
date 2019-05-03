@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.12)
+cmake_minimum_required (VERSION ${CMAKE_MIN_VERSION})
 
 target_sources(Neptune
 PRIVATE

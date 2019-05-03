@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.12)
+cmake_minimum_required (VERSION ${CMAKE_MIN_VERSION})
 
 # This file contains constants which abstract default cmake variables.
 # It is done so to prevent future update-related-harm and for usage comodity.

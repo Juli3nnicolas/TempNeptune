@@ -1,6 +1,6 @@
 # Scripts that includes Windows-specific files in BuildProjectTree.cmake.
 
-cmake_minimum_required (VERSION 3.12)
+cmake_minimum_required (VERSION ${CMAKE_MIN_VERSION})
 
 source_group("Engine\\Windows" REGULAR_EXPRESSION "Engine/+Windows/+\\w*")
 	source_group("Engine\\Windows\\Core" REGULAR_EXPRESSION "Engine/+Windows/+Core/+\\w*")

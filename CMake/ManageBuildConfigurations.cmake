@@ -1,7 +1,7 @@
 # Manage all build configurations. Edit this file to remove or add 
 # configurations for IDEs such as Visual studio or XCode
 
-cmake_minimum_required (VERSION 3.12)
+cmake_minimum_required (VERSION ${CMAKE_MIN_VERSION})
 message("########## Running ManageBuildConfigurations.cmake")
 
 # Remove the confiurations MinSizeRel and RelWithDebInfo

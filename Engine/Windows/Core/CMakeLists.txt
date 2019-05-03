@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.12)
+cmake_minimum_required (VERSION ${CMAKE_MIN_VERSION})
 
 # Add the current dir to the include path (i.e Engine/Windows/Core)
 # So that modules can be included by category as "Graphics", "Input" 
