@@ -27,4 +27,4 @@ endif()
 # Configuration-specific definitions
 target_compile_definitions(Neptune PUBLIC $<$<CONFIG:DEBUG>:NEP_DEBUG>)
 target_compile_definitions(Neptune PUBLIC $<$<CONFIG:RELEASE>:NEP_RELEASE>)
-# TODO : Add the statement to configure NEP_FINAL
+target_compile_definitions(Neptune PUBLIC $<$<CONFIG:FINAL>:NEP_FINAL>)

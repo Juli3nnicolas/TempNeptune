@@ -8,10 +8,10 @@ message("########## Executing Neptune/CMakeLists.txt")
 project ("Neptune")
 
 # Add targets
-# Adding the flag WIN32 makes the executable a GUI application (calling WinMain())
 add_executable (Neptune "")
 
 # Include helper scripts
+include("CMake/ManageBuildConfigurations.cmake")
 include("CMake/SetCompilationFlags.cmake")
 include("CMake/DefinePreprocessorVariables.cmake")
 include("CMake/BuildProjectTree.cmake")

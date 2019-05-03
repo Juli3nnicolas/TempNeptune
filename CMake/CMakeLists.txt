@@ -12,4 +12,5 @@ PRIVATE
 	"CMake/ImportDependencies.cmake"
 	"CMake/PostBuildOperations.cmake"
 	"CMake/SetCompilationFlags.cmake"
+	"CMake/ManageBuildConfigurations.cmake"
 )
