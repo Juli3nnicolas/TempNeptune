@@ -7,7 +7,7 @@
 
 using namespace std;
 
-// Hack to include SDLmain if the version of visual studio used to compile it is 2013 or earlier
+// Hack to include SDLmain if the version of visual studio used to compile is 2013 or earlier
 extern "C"
 {
 	FILE stdstreams_array[3] = { *stdin, *stdout, *stderr };

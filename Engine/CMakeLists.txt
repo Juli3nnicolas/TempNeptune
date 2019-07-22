@@ -1,21 +1,9 @@
-﻿# CMakeList.txt : CMake project for Neptune, include source and define
-# project specific logic here.
+﻿# CMakeList.txt : CMake project for Neptune, includes sources and define
+# project-specific logic here.
 #
 cmake_minimum_required (VERSION ${CMAKE_MIN_VERSION})
 
 message("########## Executing Neptune/Engine/CMakeLists.txt")
-
-# List header files, they must be #includable by users
-list(APPEND HEADERS 
-	"Engine/Neptune.h"
-	"Engine/Mandelbrot.h"
-)
-
-# List cpp files, useful for compilation purpose only
-list(APPEND CPP_FILES
-	"Engine/Neptune.cpp"
-	"Engine/Mandelbrot.cpp"
-)
 
 # Add source files
 target_sources(Neptune

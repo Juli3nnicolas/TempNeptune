@@ -9,7 +9,7 @@ message("########## Executing Neptune/CMakeLists.txt")
 project ("Neptune")
 
 # Add targets
-add_executable(Neptune)
+add_library(Neptune STATIC)
 
 # Include helper scripts
 include("CMake/ManageBuildConfigurations.cmake")
