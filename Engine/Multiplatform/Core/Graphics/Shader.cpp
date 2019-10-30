@@ -11,7 +11,7 @@ Neptune::Shader::Shader(const GLchar* file_name, GLuint shader_type):
 	std::ifstream file(file_name);
 	if ( !file.is_open() )
 	{
-		NEP_LOG("Error. Shader file couldn't be found.");
+		NEP_LOG("Error. Shader file couldn't be found. File name : %s", file_name);
 		NEP_ASSERT(false);
 		return;
 	}
