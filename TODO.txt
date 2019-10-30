@@ -1,4 +1,4 @@
 - Improve the architecure config with cmake (compiling in 32 bits or 64 bits is messy at the moment)
-- Build the whole engine as a static library, not an exe
+- Test the static lib of neptune with NeptuneTestApp
 - Remove project generation warnings
 - Set a variable for the target instead of using the hard-coded-name "Neptune" all around
